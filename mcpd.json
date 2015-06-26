@@ -1,0 +1,309 @@
+{
+"url": "",
+"@id":"http://...",
+@"context": "",
+@"type": "Schema",
+"columns": [{
+	"name": "INSTCODE",
+	"titles": "Institute code",
+	"dc:description": "FAO WIEWS code of the institute where the accession is maintained. The codes consist of the 3-letter ISO 3166 country code of the country where the institute is located plus a number (e.g.COL001). The current set of institute codes is available from http://apps3.fao.org/wiews/wiews.jsp. For those institutes not yet having an FAO Code, or for those with obsolete codes, see Common formatting rules (v)",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "ACCENUM",
+	"titles": "Accession number ",
+	"dc:description": "This is the unique identifier for accessions within a genebank, and is assigned when a sample is entered into the genebank collection (e.g. PI 113869).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "COLLNUMB",
+	"titles": "Collecting number",
+	"dc:description": "Original identifier assigned by the collector(s) of the sample, normally composed of the name or initials of the collector(s) followed by a number (e.g. FM9909). This identifier is essential for identifying duplicates held in different collections.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "COLLCODE",
+	"titles": "Collecting institute code",
+	"dc:description": "FAO WIEWS code of the institute collecting the sample. If the holding institute has collected the material, the collecting institute code (COLLCODE) should be the same as the holding institute code (INSTCODE). Follows INSTCODE standard. Multiple values are separated by a semicolon without space.",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "COLLNAME",
+	"titles": Collecting institute name",
+	"dc:description": "Name of the institute collecting the sample. This descriptor should be used only if COLLCODE cannot be filled because the FAO WIEWS code for this institute is not available. Multiple values are separated by a semicolon without space",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "COLLINSTADDRESS",
+	"titles": Collecting institute address",
+	"dc:description": "Address of the institute collecting the sample. This descriptor should be used only if COLLCODE cannot be filled since the FAO WIEWS code for this institute is not available. Multiple values are separated by a semicolon without space.",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "COLLMISSID",
+	"titles": Collecting mission identifier",
+	"dc:description": "Identifier of the collecting mission used by the Collecting Institute (4 or 4.1) (e.g. CIATFOR-052,CN426).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "GENUS",
+	"titles": "Genus",
+	"dc:description": "Genus name for taxon. Initial uppercase letter required.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "SPECIES",
+	"titles": "Species",
+	"dc:description": "Specific epithet portion of the scientific name in lowercase letters. Only the following abbreviation is allowed: sp.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "SPAUTHOR",
+	"titles": "Species authority",
+	"dc:description": "Provide the authority for the species name.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "SUBTAXA",
+	"titles": "Subtaxon",
+	"dc:description": "Subtaxon can be used to store any additional taxonomic identifier. The following abbreviations are allowed: subsp. (for subspecies); convar. (for convariety); var. (for variety); f. (for form); Group (for cultivar group).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "SUBAUTHOR",
+	"titles": "Subtaxon authority",
+	"dc:description": "Provide the subtaxon authority at the most detailed taxonomic level.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "CROPNAME",
+	"titles": "Common crop name",
+	"dc:description": "Common name of the crop. Example: malting barley, macadamia, maïs",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "ACCENAME",
+	"titles": "Accession name",
+	"dc:description": "Either a registered or other designation given to the material received, other than the donor’s accession number (23) or collecting number (3). First letter uppercase. Multiple names are separated by a semicolon without space. Example: Accession name: Bogatyr;Symphony;Emma",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "ACQDATE",
+	"titles": "Acquisition date",
+	"dc:description": "Date on which the accession entered the collection where YYYY is the year, MM is the month and DD is the day. Missing data (MM or DD) should be indicated with hyphens or 00 [double zero]",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "ORIGCTY",
+	"titles": "Country of origin",
+	"dc:description": "3-letter ISO 3166-1 code of the country in which the sample was originally collected (e.g. landrace, crop wild relative, farmers variety), bred or selected (breeding lines, GMOs, segregating populations, hybrids, modern cultivars, etc.).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "COLLSITE",
+	"titles": "Location of collecting site",
+	"dc:description": "Location information below the country level that describes where the accession was collected, preferable in English. This might include the distance in kilometres and direction from the nearest town, village or map grid reference point, (e.g. 7 km south of Curitiba in the state of Parana).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "DECLATITUDE",
+	"titles": "Latitude of collecting site (Decimal degrees format)",
+	"dc:description": "Latitude expressed in decimal degrees. Positive values are North of the Equator; negative values are South of the Equator (e.g. -44.6975).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "LATITUDE",
+	"titles": "Latitude of collecting site (Degrees, Minutes, Seconds format)",
+	"dc:description": "Degrees (2 digits) minutes (2 digits), and seconds (2 digits) followed by N (North) or S (South) (e.g. 103020S). Every missing digit (minutes or seconds) should be indicated with a hyphen. Leading zeros are required (e.g. 10----S; 011530N; 4531--S). ",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "DECLONGITUDE",
+	"titles": "Longitude of collecting site (Decimal degrees format)",
+	"dc:description": "Longitude expressed in decimal degrees. Positive values are East of the Greenwich Meridian; negative values are West of the Greenwich Meridian (e.g. +120.9123).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "LONGITUDE",
+	"titles": "Longitude of collecting site (Degrees, Minutes, Seconds format)",
+	"dc:description": "Degrees (3 digits), minutes (2 digits), and seconds (2 digits) followed by E (East) or W (West) (e.g. 0762510W). Every missing digit (minutes or seconds) should be indicated with a hyphen. Leading zeros are required (e.g. 076----W).",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "COORDUNCERT",
+	"titles": "Coordinate uncertainty [m]",
+	"dc:description": "Uncertainty associated with the coordinates in metres. Leave the value empty if the uncertainty is unknown.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "COORDDATUM",
+	"titles": "Coordinate datum",
+	"dc:description": "The geodetic datum or spatial reference system upon which the coordinates given in decimal latitude and decimal longitude are based (e.g. WGS84, ETRS89, NAD83). The GPS uses the
+WGS84 datum.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "GEOREFMETH",
+	"titles": "Georeferencing method",
+	"dc:description": "The georeferencing method used (GPS, determined from map, gazetteer, or estimated using software). Leave the value empty if georeferencing method is not known.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "ELEVATION",
+	"titles": "Elevation of collecting site [masl]",
+	"dc:description": "Elevation of collecting site expressed in metres above sea level. Negative values are allowed.",
+	"datatype": "float",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "COLLDATE",
+	"titles": "Collecting date of sample",
+	"dc:description": "Collecting date of the sample, where YYYY is the year, MM is the month and DD is the day. Missing data (MM or DD) should be indicated with hyphens or ‘00’ [double zero].",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "BREDCODE",
+	"titles": "Breeding institute code",
+	"dc:description": "FAO WIEWS code of the institute that has bred the material. If the holding institute has bred the material, the breeding institute code (BREDCODE) should be the same as the holding institute code (INSTCODE). Follows INSTCODE standard. Multiple values are separated by a semicolon without space",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	},{
+	"name": "BREDNAME",
+	"titles": "Breeding institute name",
+	"dc:description": "Name of the institute (or person) that bred the material. This descriptor should be used only if BREDCODE cannot be filled because the FAO WIEWS code for this institute is not available. Multiple names are separated by a semicolon without space.",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "SAMPSTAT",
+	"titles": "Biological status of accession",
+	"dc:description": "The coding scheme proposed can be used at 3 different levels of detail: either by using the general codes (in boldface) such as 100, 200, 300, 400, or by using the more specific codes
+such as 110, 120, etc. ",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "ANCEST",
+	"titles": "Ancestral data",
+	"dc:description": "Information about either pedigree or other description of ancestral information (e.g. parent variety in case of mutant or selection). For example a pedigree Hanna/7*Atlas//Turk/8*Atlas or a description: mutation found in Hanna, selection from Irene or cross involving amongst others Hanna and Irene.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "COLLSRC",
+	"titles": "Collecting/acquisition source",
+	"dc:description": "The coding scheme proposed can be used at 2 different levels of detail: either by using the general codes (in boldface) such as 10, 20, 30, 40, etc., or by using the more specific codes, such as 11, 12, etc.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "DONORCODE",
+	"titles": "Donor institute code",
+	"dc:description": "FAO WIEWS code of the donor institute. Follows INSTCODE standard",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "DONORNAME",
+	"titles": "Donor institute name",
+	"dc:description": "Name of the donor institute (or person). This descriptor should be used only if DONORCODE cannot be filled because the FAO WIEWS code for this institute is not available.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "DONORNUMB",
+	"titles": "Donor accession number",
+	"dc:description": "Identifier assigned to an accession by the donor. Follows ACCENUMB standard.",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "OTHERNUMB",
+	"titles": "Other identifiers associated with the accession",
+	"dc:description": "Any other identifiers known to exist in other collections for this accession. Use the following format: INSTCODE:ACCENUMB;INSTCODE:identifier;… INSTCODE and identifier are
+separated by a colon without space. Pairs of INSTCODE and identifier are separated by a
+semicolon without space. When the institute is not known, the identifier should be preceded by a
+colon.",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "DUPLSITE",
+	"titles": "Location of safety duplicates",
+	"dc:description": "FAO WIEWS code of the institute(s) where a safety duplicate of the accession is maintained. Multiple values are separated by a semicolon without space. Follows INSTCODE standard.",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "DUPLINSTNAME",
+	"titles": "Institute maintaining safety duplicates",
+	"dc:description": "Name of the institute where a safety duplicate of the accession is maintained. Multiple values are separated by a semicolon without space.",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "STORAGE",
+	"titles": "Type of germplasm storage",
+	"dc:description": "If germplasm is maintained under different types of storage, multiple choices are allowed, separated by a semicolon (e.g. 20;30). (Refer to FAO/IPGRI Genebank Standards 1994 for
+details on storage type.)",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "MLSSTAT",
+	"titles": "MLS status of the accession",
+	"dc:description": "The status of an accession with regards to the Multilateral System (MLS) of the International Treaty on Plant Genetic Resources for Food and Agriculture. Leave the value empty if the status is not known, 0 No (not included), 1 Yes (included), 99 Other (elaborate in REMARKS field, e.g. under development)",
+	"datatype": "string",
+	"required": "",
+	"propertyUrl": ""
+	}, {
+	"name": "REMARKS",
+	"titles": "Remarks",
+	"dc:description": "The remarks field is used to add notes or to elaborate on descriptors with value 99 or 999 (= Other). Prefix remarks with the field name they refer to and a colon (:) without space (e.g. COLLSRC:riverside). Distinct remarks referring to different fields are separated by semicolons
+without space",
+	"datatype": "string",
+	"separator": ";",
+	"required": "",
+	"propertyUrl": ""
+	}	
+],
+"foreignKeys": "",
+"primaryKey": "COLLNUMB",
+"aboutUrl":""
+}
