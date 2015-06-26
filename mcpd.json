@@ -1,7 +1,7 @@
 {
-"url": "",
+"url": "https://github.com/edzale/wheat/blob/master/mcpd.json",
 "@id":"http://...",
-@"context": "",
+@"context": "http://www.w3c.org/ns/csvw",
 @"type": "Schema",
 "columns": [{
 	"name": "INSTCODE",
