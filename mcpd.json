@@ -1,7 +1,7 @@
 {
 "url": "https://github.com/edzale/wheat/blob/master/mcpd.json",
-@"context": "http://www.w3c.org/ns/csvw",
-@"type": "Schema",
+"@context": "http://www.w3c.org/ns/csvw",
+"@type": "Schema",
 "columns": [{
 	"name": "INSTCODE",
 	"titles": "Institute code",
