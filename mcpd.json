@@ -33,7 +33,7 @@
 	"propertyUrl": ""
 	},{
 	"name": "COLLNAME",
-	"titles": Collecting institute name",
+	"titles": "Collecting institute name",
 	"dc:description": "Name of the institute collecting the sample. This descriptor should be used only if COLLCODE cannot be filled because the FAO WIEWS code for this institute is not available. Multiple values are separated by a semicolon without space",
 	"datatype": "string",
 	"separator": ";",
@@ -41,7 +41,7 @@
 	"propertyUrl": ""
 	},{
 	"name": "COLLINSTADDRESS",
-	"titles": Collecting institute address",
+	"titles": "Collecting institute address",
 	"dc:description": "Address of the institute collecting the sample. This descriptor should be used only if COLLCODE cannot be filled since the FAO WIEWS code for this institute is not available. Multiple values are separated by a semicolon without space.",
 	"datatype": "string",
 	"separator": ";",
