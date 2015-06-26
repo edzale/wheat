@@ -1,6 +1,5 @@
 {
 "url": "https://github.com/edzale/wheat/blob/master/mcpd.json",
-"@id":"http://...",
 @"context": "http://www.w3c.org/ns/csvw",
 @"type": "Schema",
 "columns": [{
