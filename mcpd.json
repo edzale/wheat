@@ -85,7 +85,7 @@
 	}, {
 	"name": "SUBAUTHOR",
 	"titles": "Subtaxon authority",
-	"dc:description": "Provide the subtaxon authority at the most detailed taxonomic level.",
+	"dc:description": "Provide the subtaxon authority at the most detailed taxonomic evel.",
 	"datatype": "string",
 	"required": "",
 	"propertyUrl": ""
