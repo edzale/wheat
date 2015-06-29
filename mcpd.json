@@ -11,7 +11,8 @@
 	"name": "ACCENUM",
 	"titles": "Accession number ",
 	"dc:description": "This is the unique identifier for accessions within a genebank, and is assigned when a sample is entered into the genebank collection (e.g. PI 113869).",
-	"datatype": "string"
+	"datatype": "string",
+	"required":"true"
 	}, {
 	"name": "COLLNUMB",
 	"titles": "Collecting number",
@@ -21,20 +22,17 @@
 	"name": "COLLCODE",
 	"titles": "Collecting institute code",
 	"dc:description": "FAO WIEWS code of the institute collecting the sample. If the holding institute has collected the material, the collecting institute code (COLLCODE) should be the same as the holding institute code (INSTCODE). Follows INSTCODE standard. Multiple values are separated by a semicolon without space.",
-	"datatype": "string",
-	"separator": ";"
+	"datatype": "string"
 	},{
 	"name": "COLLNAME",
 	"titles": "Collecting institute name",
 	"dc:description": "Name of the institute collecting the sample. This descriptor should be used only if COLLCODE cannot be filled because the FAO WIEWS code for this institute is not available. Multiple values are separated by a semicolon without space",
-	"datatype": "string",
-	"separator": ";"
+	"datatype": "string"
 	},{
 	"name": "COLLINSTADDRESS",
 	"titles": "Collecting institute address",
 	"dc:description": "Address of the institute collecting the sample. This descriptor should be used only if COLLCODE cannot be filled since the FAO WIEWS code for this institute is not available. Multiple values are separated by a semicolon without space.",
-	"datatype": "string",
-	"separator": ";"
+	"datatype": "string"
 	},{
 	"name": "COLLMISSID",
 	"titles": "Collecting mission identifier",
@@ -44,12 +42,14 @@
 	"name": "GENUS",
 	"titles": "Genus",
 	"dc:description": "Genus name for taxon. Initial uppercase letter required.",
-	"datatype": "string"
+	"datatype": "string",
+	"ncbi taxid": "integer"
 	}, {
 	"name": "SPECIES",
 	"titles": "Species",
 	"dc:description": "Specific epithet portion of the scientific name in lowercase letters. Only the following abbreviation is allowed: sp.",
-	"datatype": "string"
+	"datatype": "string",
+	"ncbi taxid": "integer"
 	}, {
 	"name": "SPAUTHOR",
 	"titles": "Species authority",
@@ -59,11 +59,12 @@
 	"name": "SUBTAXA",
 	"titles": "Subtaxon",
 	"dc:description": "Subtaxon can be used to store any additional taxonomic identifier. The following abbreviations are allowed: subsp. (for subspecies); convar. (for convariety); var. (for variety); f. (for form); Group (for cultivar group).",
-	"datatype": "string"
+	"datatype": "string",
+	"ncbi taxid": "integer"
 	}, {
 	"name": "SUBAUTHOR",
 	"titles": "Subtaxon authority",
-	"dc:description": "Provide the subtaxon authority at the most detailed taxonomic evel.",
+	"dc:description": "Provide the subtaxon authority at the most detailed taxonomic level.",
 	"datatype": "string"
 	}, {
 	"name": "CROPNAME",
@@ -145,7 +146,7 @@
 	},{
 	"name": "BREDNAME",
 	"titles": "Breeding institute name",
-	"dc:description": "Name of the institute (or person) that bred the material. This descriptor should be used only if BREDCODE cannot be filled because the FAO WIEWS code for this institute is not available. Multiple names are separated by a semicolon without space.",
+	"dc:description": "Name of the institute (or person, or company) that bred the material. This descriptor should be used only if BREDCODE cannot be filled because the FAO WIEWS code for this institute is not available. Multiple names are separated by a semicolon without space.",
 	"datatype": "string",
 	"separator": ";"
 	}, {
