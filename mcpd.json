@@ -164,11 +164,11 @@
 	"titles": "Collecting/acquisition source",
 	"dc:description": "The coding scheme proposed can be used at 2 different levels of detail: either by using the general codes (in boldface) such as 10, 20, 30, 40, etc., or by using the more specific codes, such as 11, 12, etc.",
 	"datatype": "string"
-	}, {
-	"name": "DONORCODE",
 	"titles": "Donor institute code",
 	"dc:description": "FAO WIEWS code of the donor institute. Follows INSTCODE standard",
 	"datatype": "string"
+	}, {
+	"name": "DONORCODE",
 	}, {
 	"name": "DONORNAME",
 	"titles": "Donor institute name",
