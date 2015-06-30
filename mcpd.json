@@ -164,59 +164,57 @@
 	"titles": "Collecting/acquisition source",
 	"dc:description": "The coding scheme proposed can be used at 2 different levels of detail: either by using the general codes (in boldface) such as 10, 20, 30, 40, etc., or by using the more specific codes, such as 11, 12, etc.",
 	"datatype": "string"
-	"titles": "Donor institute code",
-	"dc:description": "FAO WIEWS code of the donor institute. Follows INSTCODE standard",
-	"datatype": "string"
 	}, {
 	"name": "DONORCODE",
+	"titles": "Donor institute code",
+	"datatype": "string",
+	"description": "FAO WIEWS code of the donor institute. Follows INSTCODE standard"
 	}, {
 	"name": "DONORNAME",
 	"titles": "Donor institute name",
-	"dc:description": "Name of the donor institute (or person). This descriptor should be used only if DONORCODE cannot be filled because the FAO WIEWS code for this institute is not available.",
+	"description": "Name of the donor institute (or person or company). This descriptor should be used only if DONORCODE cannot be filled because the FAO WIEWS code for this institute is not available.",
 	"datatype": "string"
 	}, {
 	"name": "DONORNUMB",
 	"titles": "Donor accession number",
-	"dc:description": "Identifier assigned to an accession by the donor. Follows ACCENUMB standard.",
+	"description": "Identifier assigned to an accession by the donor. Follows ACCENUMB standard.",
 	"datatype": "string"
 	}, {
 	"name": "OTHERNUMB",
 	"titles": "Other identifiers associated with the accession",
-	"dc:description": "Any other identifiers known to exist in other collections for this accession. Use the following format: INSTCODE:ACCENUMB;INSTCODE:identifier;… INSTCODE and identifier are separated by a colon without space. Pairs of INSTCODE and identifier are separated by a semicolon without space. When the institute is not known, the identifier should be preceded by a colon.",
+	"description": "Any other identifiers known to exist in other collections for this accession. Use the following format: INSTCODE:ACCENUMB;INSTCODE:identifier;… INSTCODE and identifier are separated by a colon without space. Pairs of INSTCODE and identifier are separated by a semicolon without space. When the institute is not known, the identifier should be preceded by a colon.",
 	"datatype": "string",
 	"separator": ";"
 	}, {
 	"name": "DUPLSITE",
 	"titles": "Location of safety duplicates",
-	"dc:description": "FAO WIEWS code of the institute(s) where a safety duplicate of the accession is maintained. Multiple values are separated by a semicolon without space. Follows INSTCODE standard.",
+	"description": "FAO WIEWS code of the institute(s) where a safety duplicate of the accession is maintained. Multiple values are separated by a semicolon without space. Follows INSTCODE standard.",
 	"datatype": "string",
 	"separator": ";"
 	}, {
 	"name": "DUPLINSTNAME",
 	"titles": "Institute maintaining safety duplicates",
-	"dc:description": "Name of the institute where a safety duplicate of the accession is maintained. Multiple values are separated by a semicolon without space.",
+	"description": "Name of the institute where a safety duplicate of the accession is maintained. Multiple values are separated by a semicolon without space.",
 	"datatype": "string",
 	"separator": ";"
 	}, {
 	"name": "STORAGE",
 	"titles": "Type of germplasm storage",
-	"dc:description": "If germplasm is maintained under different types of storage, multiple choices are allowed, separated by a semicolon (e.g. 20;30). (Refer to FAO/IPGRI Genebank Standards 1994 for details on storage type.)",
+	"description": "If germplasm is maintained under different types of storage, multiple choices are allowed, separated by a semicolon (e.g. 20;30). (Refer to FAO/IPGRI Genebank Standards 1994 for details on storage type.)",
 	"datatype": "string",
 	"separator": ";"
 	}, {
 	"name": "MLSSTAT",
 	"titles": "MLS status of the accession",
-	"dc:description": "The status of an accession with regards to the Multilateral System (MLS) of the International Treaty on Plant Genetic Resources for Food and Agriculture. Leave the value empty if the status is not known, 0 No (not included), 1 Yes (included), 99 Other (elaborate in REMARKS field, e.g. under development)",
+	"description": "The status of an accession with regards to the Multilateral System (MLS) of the International Treaty on Plant Genetic Resources for Food and Agriculture. Leave the value empty if the status is not known, 0 No (not included), 1 Yes (included), 99 Other (elaborate in REMARKS field, e.g. under development)",
 	"datatype": "string"
 	}, {
 	"name": "REMARKS",
 	"titles": "Remarks",
-	"dc:description": "The remarks field is used to add notes or to elaborate on descriptors with value 99 or 999 (= Other). Prefix remarks with the field name they refer to and a colon (:) without space (e.g. COLLSRC:riverside). Distinct remarks referring to different fields are separated by semicolons without space",
+	"description": "The remarks field is used to add notes or to elaborate on descriptors with value 99 or 999 (= Other). Prefix remarks with the field name they refer to and a colon (:) without space (e.g. COLLSRC:riverside). Distinct remarks referring to different fields are separated by semicolons without space",
 	"datatype": "string",
 	"separator": ";"
 	}	
 ],
-"foreignKeys": "",
-"primaryKey": "COLLNUMB",
-"aboutUrl":""
+"aboutUrl":"http://www.bioversityinternational.org/fileadmin/user_upload/online_library/publications/pdfs/FAO-Bioversity_multi_crop_passport_descriptors_V_2_Final_rev_1526.pdf"
 }
